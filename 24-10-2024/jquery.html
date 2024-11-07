@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head><title>Jquery</title>
+<script
+  src="jquery.js"
+  ></script>
+	</head>
+
+<body>
+<p>hello class</p>
+<h1>Today we learn about the jquery</h1>
+<h6>we have to learn the syntax of jquery</h6>
+<input type="text" name="" class="toGetValue" value="Swan 5">
+<button class="btn1">Click to change the value </button>
+
+<script>
+	$(document).ready(function(){
+		$('.btn1').click(function(){
+			$('p').text("hello class swan 5");
+			//alert($('.toGetValue').val());
+			//$('.toGetValue').val("Hello Swan 5");
+		});
+	});
+</script>
+</body>
+</html>

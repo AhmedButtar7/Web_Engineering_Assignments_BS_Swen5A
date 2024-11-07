@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="jquery.js"></script>
+	<title></title>
+</head>
+<body>
+
+	<div>
+		<h1>Mouse Events Example Usage</h1>
+		<ul>
+			<li id="clickE">This Represents click event</li>
+			<li id="dblclickE">This Represents Double click event</li>
+			<li id="mouseenterE">This Represents Mouse Enter Event</li>
+			<li id="mouseleaveE">This Represents the Mouse Leave Event</li>
+		</ul>
+	</div>
+	<h1>Key Board Events Example Usage</h1>
+	
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			// Representing the Mouse functions
+			$('#clickE').click(function(){
+				$(this).css('color','green')
+			})
+
+			$('#dblclickE').dblclick(function(){
+				$(this).css('color', 'green')
+			})
+
+			$('#mouseenterE').mouseenter(function(){
+				$(this).css('color','green')
+			})
+
+			$('#mouseleaveE').mouseleave(function(){
+				$(this).css('color','green')
+			})
+
+		})
+	</script>
+
+	<button id="hide">Hide</button>
+	<button id="show">Show</button>
+	<p id="text">This is a paragraph.</p>
+
+	<script>
+  		$(document).ready(function(){
+    		$("#hide").click(function(){
+      			$("#text").hide();
+   		 });
+   			 $("#show").click(function(){
+     			 $("#text").show();
+   		 });
+ 	 });
+	</script>
+
+
+
+	<button id="fadeOut">Fade Out</button>
+	<button id="fadeIn">Fade In</button>
+	<img id="image" width="100px" height="100px" src="https://nishatlinen.com/cdn/shop/files/400x400-acc-bags-2.jpg?v=1728288846&width=600">
+
+	<script>
+  		$(document).ready(function(){
+    		$("#fadeOut").click(function(){
+      			$("#image").fadeOut();
+    	});
+    		$("#fadeIn").click(function(){
+      			$("#image").fadeIn();
+    	});
+  	});
+	</script>
+
+	<br>
+	<br>
+	<br>
+
+	<input type="text" id="inputField" placeholder="Type something...">
+	<p id="keyPressed"></p>
+	<script>
+	  $(document).ready(function(){
+	      $("#inputField").keypress(function(event){
+	            $("#keyPressed").text("Key pressed: " + event.key);
+    	});
+  	});
+	</script>
+
+
+
+
+	<button id="hideWithCallback">Hide with Callback</button>
+	<p id="callbackText">This is a paragraph with a callback.</p>
+	<script>
+	  $(document).ready(function(){
+	      $("#hideWithCallback").click(function(){
+	            $("#callbackText").hide("slow", function(){
+	                    alert("The paragraph is now hidden.");
+         });
+      });
+    });
+	</script>
+
+
+
+	<button id="chain">Chain</button>
+<p id="chainText">This is a paragraph for chaining.</p>
+
+<script>
+  $(document).ready(function(){
+    $("#chain").click(function(){
+      $("#chainText").css("color", "red").slideUp(2000).slideDown(2000);
+    });
+  });
+</script>
+
+
+
+<input type="text" id="getSetInput">
+<button id="getValue">Get Value</button>
+<button id="setValue">Set Value</button>
+<p id="displayValue"></p>
+
+<script>
+  $(document).ready(function(){
+    $("#getValue").click(function(){
+      var value = $("#getSetInput").val();
+      $("#displayValue").text("Input value: " + value);
+    });
+    $("#setValue").click(function(){
+      $("#getSetInput").val("Hello, World!");
+    });
+  });
+</script>
+
+
+
+<ul id="list">
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+<button id="addItem">Add Item</button>
+<button id="removeItem">Remove Item</button>
+
+<script>
+  $(document).ready(function(){
+    $("#addItem").click(function(){
+      $("#list").append("<li>New Item</li>");
+    });
+    $("#removeItem").click(function(){
+      $("#list li:last").remove();
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
