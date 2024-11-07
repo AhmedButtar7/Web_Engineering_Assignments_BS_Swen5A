@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Website</title>
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            background:  #3c7055;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 100px;
+             margin-right: 100px;
+        }
+        section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        aside {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+        footer {
+            background: #3C7055;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            
+            width: 100%;
+            bottom: 0;
+        }
+        address a {
+            color: #fff;
+            text-decoration: none;
+        }
+         article {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            color: #333;
+        }
+        input {
+            width: 30%;
+            align-items: center;
+        }
+        form {
+            margin-left: 10%;
+            
+
+        }
+        
+        
+
+
+    </style>
+<body>
+    <header>
+        <div style="justify-content: start;"><h1>Welcome to My Website</h1>
+            <p style="padding: 20px;">Myself Muhammad Ahmed. This Website is created as an assignment 
+            <br> for the course of Web Engineering being instructed by Mr. Muhammad Awais</p></div>
+        <div style="justify-content:flex-end;">
+            <figure><img src="profile.png" width="270px" height="250px"></figure>
+            <figcaption>Muhammad Ahmed</figcaption>
+        </div>
+         <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+            <div style="background: #fff;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);"><marquee direction= "right"><h2>A simple table in html</h2></marquee>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Head 1</th>
+                        <th>Head 2</th>
+                        <th>Head 3</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table></div>
+            <div style="margin-left: 50px; background: #fff;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                <marquee direction="right"><h2>Working with Forms</h2></marquee>
+                
+                <form action="submit" method="form" style="display: flex;
+                flex-direction: column; padding: 5px;">
+                    <label for="Name">Name </label>
+                    <input type="text" name="Username" required placeholder="Username">
+
+                    <label for="Email">Email </label>
+                    <input type="Email" name="Email" required placeholder="Email">
+
+                    <label for="Password">Password </label>
+                    <input type="Password" name="Password" required placeholder="Password">
+
+                    <label for="Password">Confirm Password</label>
+                    <input type="Password" name="Confirm" required placeholder="Confirm Password"><br>
+
+                    <input type="submit" value="Submit">        
+                </form>
+            </div>
+
+            <div id="aside">
+                <aside>
+                    <marquee direction= "right"><h2>Aside about this assignment</h2></marquee>
+                    <p>This Wesbite is Created to show the use of sementic and mostly used tags in html</p>
+                </aside>
+            </div>
+
+
+        
+
+
+    </main>
+
+    <div id="article" style="justify-content:center; padding: 20px; margin-left: 100px; margin-right: 100px;">
+        <marquee direction="right"><h2>Articles</h2></marquee>
+        
+    <article>
+        <h2>Article 1</h2>
+        <p>This is the first article. It contains some interesting information about a specific topic.</p>
+    </article>
+    <article>
+        <h2>Article 2</h2>
+        <p>This is the second article. It also contains some interesting information about another topic.</p>
+    </article>
+    </div>
+    
+     <footer>
+        <p>© 2024 BS SWEN-5A. All rights reserved.</p>
+        <address>
+            Contact Me at <a href="mailto:swen221101018@kfueit.edu.pk">SWEN221101018</a>
+        </address>
+    </footer>
+    
+
+</body>
+</html>
