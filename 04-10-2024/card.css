@@ -1,0 +1,29 @@
+body{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-top: 100px;
+	position: relative;
+}
+.card{
+	height: 250px;
+	width: 170px;
+	align-content: center;
+	border: 2px solid green;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+#sale{
+	position: absolute;
+}
+#card-body img{
+	
+	height: 200px;
+	width: 150px;
+	position: absolute;
+}
+#price{
+	display: flex;
+	justify-content: space-between;
+}
