@@ -1,0 +1,10 @@
+p{
+	color: blueviolet;
+}
+
+@media only screen and (max-width:786px) {
+	p{
+		color: green;
+	}
+
+}
