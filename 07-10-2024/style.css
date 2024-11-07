@@ -1,0 +1,188 @@
+#login{
+	display: flex;
+	align-items: centerw;
+	
+	flex-direction: column;
+}
+#login form{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+#login form input{
+	font-size: 25px;
+	margin: 10px;
+}
+#main-image{
+	height: 600px;
+	width: 100%;
+	position: relative;
+}
+#footer{
+	text-align: center;
+	color: #ffff;
+}
+#nav-bar{
+	
+    top: 0;
+    padding: 20px 0;
+}
+#nav-bar a{
+	float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.figure {
+            position: relative;
+            display: inline-block;
+            margin: 15px;
+        }
+.tag {
+     position: absolute;
+    top: 10px
+    left: 10px;
+    background-color: red;
+    color: white;
+     padding: 5px;
+    font-size: 1.2rem;
+}
+.search-btn {
+            position: absolute;
+            right: 10px;
+        }
+        .figure-caption {
+            text-align: center;
+        }
+#icon-support{
+	font-size: 50px;
+}
+.col-md-3{
+	display: flex;
+}
+.col-md-3 p{
+	font-size: 15px;
+	margin-top: 10px;
+	text-align: center;
+}
+#different-text{
+	text-align: center;
+	font-size: 10px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+.col-4 li{
+	list-style: none;
+	color: #ffff;
+}
+#logo-top{
+	width: 120px;
+	height: 55px;
+}
+#slider-image{
+	height: 600px;
+	width: 100%;
+}
+#main-image span{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	position: absolute;
+}
+#main-image span a{
+	text-decoration: none;
+	font-size: 15px;
+	padding: 13px;
+	color: #ffff;
+}
+#nav-span{
+	overflow: hidden;
+    margin: 20px;
+position: fixed; /* Set the navbar to fixed position */
+top: 0; /* Position the navbar at the top of the page */
+width: 100%; /* Full width */
+
+}
+#nav-span #nav-bar :hover {
+background: #ffff;
+color: black;
+
+
+
+
+
+
+@media (max-width: 768px) {
+    #main-image {
+        height: 400px; /* Adjust the height for smaller screens */
+    }
+
+    #logo-top {
+        width: 100px; /* Reduce logo size */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #slider-image {
+        height: 300px; /* Adjust slider image height */
+    }
+
+    #nav-bar {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center; /* Center align the links */
+    }
+
+    #nav-bar a {
+        padding: 10px; /* Adjust padding for mobile */
+        font-size: 14px; /* Slightly smaller text */
+    }
+
+    .figure {
+        margin: 10px; /* Reduce margin around figures */
+        flex: 1 1 45%; /* Make figures responsive */
+    }
+
+    /* Stack columns vertically for the first two-column row */
+    .[container-fluid mt-1] .row:nth-of-type(1) .col-6 {
+        flex: 1 1 100%; /* Stack columns vertically */
+    }
+
+    /* Stack columns vertically for the first three-column row */
+    .container-fluid.mt-1 .row:nth-of-type(2) .col-6,
+    .container-fluid.mt-1 .row:nth-of-type(3) .col-4 {
+        flex: 1 1 100%; /* Stack columns vertically */
+    }
+
+    /* Stack columns vertically for the fourth three-column row */
+    .container-fluid.mt-1 .row:nth-of-type(4) .col-4 {
+        flex: 1 1 100%; /* Stack columns vertically */
+    }
+
+    /* Stack columns vertically for the fifth three-column row */
+    .container-fluid.mt-1 .row:nth-of-type(5) .col-md-3 {
+        flex: 1 1 100%; 
+    }
+
+    /* Stack columns vertically for the last container fluid */
+    .container-fluid:last-of-type .row .col-md-3 {
+        flex: 1 1 100%; 
+    }
+
+    #icon-support {
+        font-size: 30px; 
+    }
+
+    #different-text {
+        font-size: 8px; 
+    }
+
+    .col-4 li {
+        font-size: 10px; 
+    }
+
+    #footer {
+        font-size: 12px;
+    }
+}
